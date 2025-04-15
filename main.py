@@ -17,18 +17,14 @@ from pyrogram.raw.types import (
     MessageActionRequestedPeer
 )
 from pyrogram.enums import ParseMode
+from config import API_ID, API_HASH, BOT_TOKEN
 
-# Set up logging with a StreamHandler to ensure output to console
+# LOGGER SETUP
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 handler = logging.StreamHandler()
 handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logger.addHandler(handler)
-
-# Your Telegram API credentials
-API_ID = 28239710
-API_HASH = '7fc5b35692454973318b86481ab5eca3'
-BOT_TOKEN = '7953101913:AAEI0ovC25MEoopR3CnrKRViLxhEoxUgDtA'
 
 # Initialize the Pyrogram client
 app = Client(
@@ -96,6 +92,11 @@ async def handle_new_message(client, message):
                 text='🤖 Bot',
                 button_id=6,
                 peer_type=RequestPeerTypeUser(bot=True)
+            ),
+            KeyboardButtonRequestPeer(
+                text='Premium 🌟',
+                button_id=7,
+                peer_type=RequestPeerTypeUser(premium=True)
             )
         ])
     ]
@@ -147,7 +148,8 @@ async def raw_update_handler(client, update, users, chats):
                 3: 'Public Channel',
                 4: 'Private Group',
                 5: 'Public Group',
-                6: 'Bot'
+                6: 'Bot',
+                7: 'Premium User'
             }
             type_ = types.get(request_id, 'Unknown')
 
@@ -194,7 +196,7 @@ async def raw_update_handler(client, update, users, chats):
                 logging.info("Unknown peer type in MessageActionRequestedPeer")
                 await client.send_message(
                     chat_id,
-                    "⚠️ Could not identify the shared peer. Try forwarding a message instead.",
+                    "<b>Looks Like I Don't Have Control Over The User</b>",
                     parse_mode=ParseMode.HTML
                 )
             return
@@ -202,5 +204,5 @@ async def raw_update_handler(client, update, users, chats):
     logging.info("Raw update did not contain peer-sharing data")
 
 # Run the bot
-print("✅ Bot is running... Press Ctrl+C to stop.")
+print("✅ Bot Is Up And Running On Pyrogram Stable")
 app.run()

@@ -30,7 +30,7 @@ Before setting up the bot, ensure you have the following:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/abirxdhack/Chat-ID-Echo-Bot.git
+   git clone https://github.com/abirxdhack/Chat-ID-Bot-Pyro.git
    cd Chat-ID-Echo-Bot
    ```
 

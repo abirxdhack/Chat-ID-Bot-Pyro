@@ -128,6 +128,37 @@ async def handle_new_message(client, message):
     )
     logging.info("Sent welcome message with keyboard")
 
+# Handle forwarded messages
+@app.on_message(filters.forwarded)
+async def handle_forwarded_message(client, message):
+    logging.info(f"Received forwarded message: {message}")
+    chat_id = message.chat.id
+
+    if message.forward_from:
+        # Forwarded from a user
+        user_id = message.forward_from.id
+        user_name = message.forward_from.first_name or "User"
+        response = (
+            f"<b>Forward Message Detected</b>\n"
+            f"<b>Chat Name</b> {user_name}\n"
+            f"<b>ChatID</b> <code>{user_id}</code>"
+        )
+    elif message.forward_from_chat:
+        # Forwarded from a chat (group or channel)
+        chat_id_forwarded = message.forward_from_chat.id
+        chat_name = message.forward_from_chat.title
+        response = (
+            f"<b>Forward Message Detected</b>\n"
+            f"<b>Chat Name</b> {chat_name}\n"
+            f"<b>ChatID</b> <code>{chat_id_forwarded}</code>"
+        )
+    else:
+        # Fallback for private or inaccessible entities
+        response = "<b>Sorry Bro, Forward Method Not Support For Private Things</b>"
+
+    await client.send_message(chat_id, response, parse_mode=ParseMode.HTML)
+    logging.info(f"Sent response: {response}")
+
 # Raw update handler to process peer-sharing updates
 @app.on_raw_update()
 async def raw_update_handler(client, update, users, chats):

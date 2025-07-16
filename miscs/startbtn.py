@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 from pyrogram.types import (
     KeyboardButton,
     ReplyKeyboardMarkup,

@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 # Pyrogram setup
 API_ID = "28xx10"  # Replace this API ID with your actual API ID
 API_HASH = "7fc5b2xxb5eca3"  # Replace this API HASH with your actual API HASH

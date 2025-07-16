@@ -1,7 +1,7 @@
 # Chat ID Bot Pyro
 
 ![Chat ID Echo Bot](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram)  
-A simple and efficient Telegram bot that helps you fetch chat IDs for users, groups, channels, and bots instantly.
+An Advanced and efficient Telegram bot that helps you fetch chat IDs for users, groups, channels, and bots instantly.
 
 ## 📖 Overview
 

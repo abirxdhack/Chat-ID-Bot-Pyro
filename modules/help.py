@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from utils import LOGGER
@@ -14,7 +16,7 @@ FORWARD_TEXT = (
     "2️⃣ Forward it to me privately.\n"
     "3️⃣ I’ll instantly reveal the ID, name, and more! ⚡\n\n"
     "💡 **Pro Tip:** Works with any forwarded message, even from private chats! 😎\n\n"
-    "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+    "> 🛠 Crafted with ❤️ By @TheSmartDev"
 )
 
 GETME_TEXT = (
@@ -24,7 +26,7 @@ GETME_TEXT = (
     "2️⃣ I’ll send your user ID, name, and username instantly! ⚡\n"
     "3️⃣ If you have a profile photo, I’ll show it too! 📸\n\n"
     "💡 **Pro Tip:** Use the button in the reply to copy your ID! 😎\n\n"
-    "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+    "> 🛠 Crafted with ❤️ By @TheSmartDev"
 )
 
 SHAREDCHAT_TEXT = (
@@ -34,7 +36,7 @@ SHAREDCHAT_TEXT = (
     "2️⃣ Pick a user, bot, group, or channel to share.\n"
     "3️⃣ I’ll fetch the ID, name, and username instantly! ⚡\n\n"
     "💡 **Pro Tip:** Works for public and private chats, plus bots and premium users! 😎\n\n"
-    "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+    "> 🛠 Crafted with ❤️ By @TheSmartDev"
 )
 
 ADMINS_TEXT = (
@@ -44,7 +46,7 @@ ADMINS_TEXT = (
     "2️⃣ Use the buttons to share a channel or group where you have admin rights.\n"
     "3️⃣ I’ll reveal the ID and details instantly! ⚡\n\n"
     "💡 **Pro Tip:** Perfect for managing your admin roles! 😎\n\n"
-    "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+    "> 🛠 Crafted with ❤️ By @TheSmartDev"
 )
 
 OWNCHATS_TEXT = (
@@ -54,7 +56,7 @@ OWNCHATS_TEXT = (
     "2️⃣ Use the buttons to share a channel or group you own.\n"
     "3️⃣ I’ll send the ID and details in a snap! ⚡\n\n"
     "💡 **Pro Tip:** Great for keeping track of your own chats! 😎\n\n"
-    "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+    "> 🛠 Crafted with ❤️ By @TheSmartDev"
 )
 
 USERNAME_TEXT = (
@@ -64,7 +66,7 @@ USERNAME_TEXT = (
     "2️⃣ I’ll fetch their ID, name, and other details instantly! ⚡\n"
     "3️⃣ If they have a profile photo, I’ll show it too! 📸\n\n"
     "💡 **Pro Tip:** Works for any public username, even bots! 😎\n\n"
-    "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+    "> 🛠 Crafted with ❤️ By @TheSmartDev"
 )
 
 MAIN_MENU_BUTTONS = InlineKeyboardMarkup(

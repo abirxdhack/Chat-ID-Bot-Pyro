@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 from pyrogram import Client
 from pyrogram.enums import ParseMode
 from utils import LOGGER

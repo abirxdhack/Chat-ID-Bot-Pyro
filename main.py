@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 from bot import bot
 from utils import LOGGER
 from core.start import start

@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.enums import ChatType
@@ -30,7 +32,7 @@ async def username_command(bot: Client, message):
             f"ID: `{chat_id}`\n"
             f"Name: `{name}`\n"
             f"Username: `{username}`\n\n"
-            "> 🛠 Crafted with ❤️ By @ItsSmartDev"
+            "> 🛠 Crafted with ❤️ By @TheSmartDev"
         )
         reply_markup = InlineKeyboardMarkup(
             [

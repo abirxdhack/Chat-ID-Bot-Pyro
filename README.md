@@ -7,7 +7,7 @@ A simple and efficient Telegram bot that helps you fetch chat IDs for users, gro
 
 The **Chat ID Echo Bot** is a Telegram bot built with Python and the Telethon library. It allows users to quickly retrieve the unique IDs of Telegram entities (users, groups, channels, and bots) by sharing them through a user-friendly keyboard interface. Whether you're a developer needing chat IDs for Telegram API interactions or a user managing groups and channels, this bot makes the process seamless.
 
-This project is maintained by [abirxdhack](https://github.com/abirxdhack) and hosted at [Chat-ID-Echo-Bot](https://github.com/abirxdhack/Chat-ID-Echo-Bot).
+This project is maintained by [abirxdhack](https://github.com/abirxdhack) 
 
 ## ✨ Features
 
@@ -24,7 +24,7 @@ Before setting up the bot, ensure you have the following:
 - **Python 3.9+**: The bot is written in Python.
 - **Telegram API Credentials**: You’ll need an `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
 - **Bot Token**: Create a bot via [BotFather](https://t.me/BotFather) on Telegram to get a `BOT_TOKEN`.
-- **Pyrogram Library**: The bot uses Pyrogram to interact with Telegram’s API.
+- **pyrofork Library**: The bot uses pyrofork to interact with Telegram’s API.
 
 ## 🛠 Installation
 
@@ -37,11 +37,11 @@ Before setting up the bot, ensure you have the following:
 2. **Install Dependencies**:
    Install the required Python packages using `pip`:
    ```bash
-   pip install pyrogram
+   pip install pyrofork
    ```
 
 3. **Set Up Your Credentials**:
-   Open `quickinfo.py` and replace the placeholder credentials with your own:
+   Open `config.py` and replace the placeholder credentials with your own:
    ```python
    API_ID = 28239710  # Replace with your API ID
    API_HASH = '7fc5b35692454973318b86481ab5eca3'  # Replace with your API Hash
@@ -57,7 +57,7 @@ Before setting up the bot, ensure you have the following:
    ```
    You should see:
    ```
-   ✅ Bot is running... Press Ctrl+C to stop.
+   Bot Successfully Started
    ```
 
 2. **Interact with the Bot**:

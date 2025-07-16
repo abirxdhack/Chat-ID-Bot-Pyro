@@ -1,11 +1,11 @@
-# Chat ID Echo Bot
+# Chat ID Bot Pyro
 
 ![Chat ID Echo Bot](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram)  
 A simple and efficient Telegram bot that helps you fetch chat IDs for users, groups, channels, and bots instantly.
 
 ## 📖 Overview
 
-The **Chat ID Echo Bot** is a Telegram bot built with Python and the Telethon library. It allows users to quickly retrieve the unique IDs of Telegram entities (users, groups, channels, and bots) by sharing them through a user-friendly keyboard interface. Whether you're a developer needing chat IDs for Telegram API interactions or a user managing groups and channels, this bot makes the process seamless.
+The **Chat ID Bot Pyro** is a Telegram bot built with Python and the Pyrofork library. It allows users to quickly retrieve the unique IDs of Telegram entities (users, groups, channels, and bots) by sharing them through a user-friendly keyboard interface. Whether you're a developer needing chat IDs for Telegram API interactions or a user managing groups and channels, this bot makes the process seamless.
 
 This project is maintained by [abirxdhack](https://github.com/abirxdhack) 
 
@@ -31,7 +31,7 @@ Before setting up the bot, ensure you have the following:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/abirxdhack/Chat-ID-Bot-Pyro.git
-   cd Chat-ID-Echo-Bot
+   cd Chat-ID-Bot-Pyro
    ```
 
 2. **Install Dependencies**:
@@ -64,11 +64,7 @@ Before setting up the bot, ensure you have the following:
    - Open Telegram and start a chat with your bot (find it using the username you set via BotFather).
    - Send the `/start` command to see the welcome message and keyboard.
    - Click a button (e.g., "👤 User", "🔒 Private Group", or "🌐 Public Channel") and share the requested entity.
-   - The bot will reply with the chat ID, e.g.:
-     ```
-     👤 Shared User Info
-     🆔 ID: 5857628904
-     ```
+
 
 ## 📜 Code Structure
 

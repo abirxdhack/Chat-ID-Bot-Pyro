@@ -1,3 +1,5 @@
+#Copyright @ISmartCoder 
+#Updates Channel t.me/TheSmartDev
 from pyrogram import Client, filters
 from utils import LOGGER
 from miscs.startbtn import menu_buttons
@@ -15,6 +17,6 @@ async def start(bot: Client, message):
         "💎 **Features:**\n"
         "- Supports users, bots, private/public groups & channels\n"
         "- Fast and reliable\n\n"
-        "> 🛠 Made with ❤️ By @ItsSmartDev",
+        "> 🛠 Made with ❤️ By @TheSmartDev",
         reply_markup=menu_buttons
     )

@@ -57,19 +57,13 @@ Before setting up the bot, ensure you have the following:
    ```
    You should see:
    ```
-   Bot Successfully Started
+   Bot Started Successfully 💥
    ```
 
 2. **Interact with the Bot**:
    - Open Telegram and start a chat with your bot (find it using the username you set via BotFather).
    - Send the `/start` command to see the welcome message and keyboard.
-   - Click a button (e.g., "👤 User", "🔒 Private Group", or "🌐 Public Channel") and share the requested entity.
-
-
-## 📜 Code Structure
-
-- **`quickinfo.py`**: The main script containing the bot logic, including the event handlers for `/start` and peer sharing.
-- **Logging**: The bot uses Python’s `logging` module to log events, making it easy to debug issues.
+   - Send the `/help` command to see the all commands and explain and help
 
 ## 🤝 Contributing
 

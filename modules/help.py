@@ -1,9 +1,8 @@
-#Copyright @ISmartCoder 
-#Updates Channel t.me/TheSmartDev
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from utils import LOGGER
 from bot import bot
+from config import COMMAND_PREFIX
 
 HELP_TEXT = (
     "**Here Are QuickInfo Bot Options 👇:**\n\n"
@@ -110,7 +109,7 @@ CALLBACK_TEXTS = {
     "help_username": USERNAME_TEXT
 }
 
-@bot.on_message(filters.command("help"))
+@bot.on_message(filters.command("help", prefixes=COMMAND_PREFIX.split("|")))
 async def help_command(bot: Client, message):
     LOGGER.info(f"Help command received for user {message.from_user.id}")
     await message.reply_text(HELP_TEXT, reply_markup=MAIN_MENU_BUTTONS)

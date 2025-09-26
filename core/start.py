@@ -1,11 +1,10 @@
-#Copyright @ISmartCoder 
-#Updates Channel t.me/TheSmartDev
 from pyrogram import Client, filters
 from utils import LOGGER
 from miscs.startbtn import menu_buttons
 from bot import bot
+from config import COMMAND_PREFIX
 
-@bot.on_message(filters.command("start"))
+@bot.on_message(filters.command("start", prefixes=COMMAND_PREFIX.split("|")))
 async def start(bot: Client, message):
     LOGGER.info("Start command received")
     await message.reply_text(

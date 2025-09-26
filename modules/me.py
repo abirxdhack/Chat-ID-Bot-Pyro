@@ -3,6 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InputMedi
 from pyrogram.enums import ChatType, UserStatus
 from utils import LOGGER
 from bot import bot
+from config import COMMAND_PREFIX
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
@@ -115,7 +116,7 @@ def format_user_response(user):
     )
     return response, full_name
 
-@bot.on_message(filters.command("me"))
+@bot.on_message(filters.command("me", prefixes=COMMAND_PREFIX.split("|")))
 async def me_command(bot: Client, message):
     LOGGER.info(f"Me command received for user {message.from_user.id}")
     loading_message = await message.reply_text("`Processing Your Info...`")

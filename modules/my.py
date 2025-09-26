@@ -1,11 +1,10 @@
-#Copyright @ISmartCoder 
-#Updates Channel t.me/TheSmartDev
 from pyrogram import Client, filters
 from utils import LOGGER
 from miscs.mybtn import my_buttons
 from bot import bot
+from config import COMMAND_PREFIX
 
-@bot.on_message(filters.command("my"))
+@bot.on_message(filters.command("my", prefixes=COMMAND_PREFIX.split("|")))
 async def my_command(bot: Client, message):
     LOGGER.info("My command received")
     await message.reply_text(

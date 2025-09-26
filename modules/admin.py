@@ -4,8 +4,9 @@ from pyrogram import Client, filters
 from utils import LOGGER
 from miscs.adbtn import admin_buttons
 from bot import bot
+from config import COMMAND_PREFIX
 
-@bot.on_message(filters.command("admin"))
+@bot.on_message(filters.command("admin", prefixes=COMMAND_PREFIX.split("|")))
 async def admin_command(bot: Client, message):
     LOGGER.info("Admin command received")
     await message.reply_text(

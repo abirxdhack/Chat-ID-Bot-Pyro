@@ -24,28 +24,32 @@ Before setting up the bot, ensure you have the following:
 - **Python 3.9+**: The bot is written in Python.
 - **Telegram API Credentials**: You’ll need an `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
 - **Bot Token**: Create a bot via [BotFather](https://t.me/BotFather) on Telegram to get a `BOT_TOKEN`.
-- **pyrofork Library**: The bot uses pyrofork to interact with Telegram’s API.
+- **Pyrofork Library**: The bot uses Pyrofork to interact with Telegram’s API.
 
 ## 🛠 Installation
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/abirxdhack/Chat-ID-Bot-Pyro.git
-   cd Chat-ID-Bot-Pyro
+   git clone https://github.com/abirxdhack/Chat-ID-Pyro-Bot.git
+   cd Chat-ID-Pyro-Bot
    ```
 
 2. **Install Dependencies**:
    Install the required Python packages using `pip`:
    ```bash
-   pip install pyrofork
+   pip3 install -r requirements.txt
    ```
 
 3. **Set Up Your Credentials**:
    Open `config.py` and replace the placeholder credentials with your own:
    ```python
-   API_ID = 28239710  # Replace with your API ID
-   API_HASH = '7fc5b35692454973318b86481ab5eca3'  # Replace with your API Hash
-   BOT_TOKEN = '7671261830:AAEW7B_Wd406rBvbEwUiW4uPlHJumUokXaY'  # Replace with your Bot Token
+   #Copyright @ISmartCoder 
+   #Updates Channel t.me/TheSmartDev
+   API_ID = "28xx10"  
+   API_HASH = "7fc5b2xxb5eca3"  
+   BOT_TOKEN = "800xxxxwowmU"  
+   COMMAND_PREFIX = "#|.|/|!,"
+   ADMIN_ID = 7666341631
    ```
 
 ## 🚀 Usage
@@ -75,10 +79,7 @@ Contributions are welcome! If you have ideas for new features or improvements, f
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a pull request.
 
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## 📧 Contact
 
-For questions, suggestions, or support, reach out to [abirxdhack](https://github.com/abirxdhack) via GitHub Issues or Telegram (@TheSmartDev).
+For questions, suggestions, or support, reach out to [abirxdhack](https://github.com/abirxdhack) via GitHub Issues.
+
